@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>John Doe | Professional Portfolio & Software Engineer</title>
+    <meta name="description" content="Explore John Doe's software engineering portfolio, featuring full-stack web applications, semantic code architectures, and accessible design solutions.">
+    <meta name="keywords" content="Software Engineer, Portfolio, Frontend Developer, Accessible Web Design, HTML5, Semantic Web">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="John Doe | Professional Portfolio">
+    <meta property="og:description" content="Explore full-stack web applications and accessible design solutions by John Doe.">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="John Doe | Professional Portfolio">
+
+    <style>
+        /* Modern CSS Reset & Variables */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #1a1a1a;
+            --primary-color: #0056b3; /* High contrast fallback for accessibility */
+            --focus-outline: #ffbf00;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        /* Accessibility: Skip to Main Content Link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.2s;
+            text-decoration: none;
+        }
+
+        .skip-link:focus {
+            top: 0;
+            outline: 3px solid var(--focus-outline);
+        }
+
+        /* Focus States for Keyboard Navigation */
+        a:focus, button:focus, input:focus, textarea:focus {
+            outline: 3px solid var(--focus-outline);
+            outline-offset: 2px;
+        }
+
+        /* Layout Architecture */
+        header {
+            background-color: #f8f9fa;
+            border-bottom: 2px solid #e9ecef;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Section Controller for Multi-page feel */
+        .page-section {
+            margin-bottom: 4rem;
+        }
+
+        /* Accessible Form Elements */
+        .form-group {
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+        }
+
+        label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        input, textarea {
+            padding: 0.75rem;
+            border: 2px solid #6c757d;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="logo">
+            <strong>John Doe</strong>
+        </div>
+        <nav aria-label="Main Website Navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <section id="home" class="page-section" aria-labelledby="home-heading">
+            <h1 id="home-heading">Building Accessible & Scalable Web Architectures</h1>
+            <p>Welcome! I am a software engineer specializing in clean code architectures, semantic structure, and accessible digital solutions for everyone.</p>
+        </section>
+
+        <section id="projects" class="page-section" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Featured Engineering Projects</h2>
+            
+            <article class="project-card">
+                <h3>E-Commerce Platform Redesign</h3>
+                <p>An optimized storefront focusing on high performance and structural semantic tags resulting in improved accessibility.</p>
+                <a href="#" aria-label="Read case study about E-Commerce Platform Redesign">View Case Study</a>
+            </article>
+
+            <article class="project-card" style="margin-top: 1.5rem;">
+                <h3>Smart Attendance Automation</h3>
+                <p>An integrated cloud dashboard utilizing localized caching and automated sheet routing protocols.</p>
+                <a href="#" aria-label="Read case study about Smart Attendance Automation">View Case Study</a>
+            </article>
+        </section>
+
+        <section id="about" class="page-section" aria-labelledby="about-heading">
+            <h2 id="about-heading">About My Practice</h2>
+            <p>Dedicated to standards-compliant engineering. I combine technical architecture with meticulous attention to clean semantic semantics to achieve excellent UX and SEO visibility simultaneously.</p>
+        </section>
+
+        <section id
